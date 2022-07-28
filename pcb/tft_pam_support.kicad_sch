@@ -6,8 +6,8 @@
 
   (title_block
     (title "Support PCB for PAM8302A and TFT")
-    (date "2022-07-07")
-    (rev "1")
+    (date "2022-07-28")
+    (rev "2")
     (company "Bernhard Bablok")
     (comment 1 "https://github.com/bablokb/christmas-box")
   )
@@ -720,7 +720,7 @@
     (property "Value" "JST-PH2" (id 1) (at 157.48 56.515 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" (id 2) (at 163.83 62.865 0)
+    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (id 2) (at 163.83 62.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 163.83 62.865 0)
@@ -865,7 +865,7 @@
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
     (path "/54f34bf7-2090-40f1-94b7-7f1bea5601b1"
-      (reference "J1") (unit 1) (value "JST-PH2") (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal")
+      (reference "J1") (unit 1) (value "JST-PH2") (footprint "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal")
     )
     (path "/4f6efd07-434c-4726-9dfe-6ecc334d3305"
       (reference "J2") (unit 1) (value "Conn_01x08") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal")

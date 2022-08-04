@@ -25,16 +25,16 @@ import audiopwmio
 
 # --- constants - adapt to your needs!   -------------------------------------
 
-PIN_PWM  = board.GP0
-PIN_CLK  = board.GP18
-PIN_MOSI = board.GP19
-PIN_CS   = board.GP17
-PIN_DC   = board.GP20
-PIN_RST  = board.GP16
+PIN_CS   = board.GP22
+PIN_RST  = board.GP21
+PIN_DC   = board.GP20   # A0 on some displays
+PIN_MOSI = board.GP19   # SDA
+PIN_CLK  = board.GP18   # SCK
+PIN_PWM  = board.GP17   # AIN+ on PAM8302A
 
 TFT_WIDTH  = 160
 TFT_HEIGHT = 128
-TFT_ROTATE = 270
+TFT_ROTATE =  90
 TFT_BGR    = True
 
 IMG_FILES = [

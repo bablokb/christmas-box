@@ -12,11 +12,6 @@ include <dimensions.scad>
 
 include <BOSL2/std.scad>
 
-x_bat = 64.0;
-y_bat = 27.0;
-z_bat = 19.0;
-c_bat = 4.0;     // cutout
-
 module walls() {
   union() {
     translate([0,-y_bat/2,0]) cuboid([2*x_bot,w2,z_bat]);

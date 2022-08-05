@@ -28,3 +28,11 @@ y_bot =  y_top - 2*y_del;
 h_top =  100;
 z_b   =  0.6;            // vase-mode 3 layers
 z_lid =  16.5 + z_b;       // inner-hight + base
+
+// battery dimensions
+
+x_bat = 64.0;
+y_bat = 27.0;
+z_bat = 19.0;
+c_bat = 4.0;     // cutout
+

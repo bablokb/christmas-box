@@ -8,5 +8,6 @@ adafruit*
 boot_out.txt
 *.stl
 fp-info-cache
+*.sch-bak
 jlcpcb
 *.zip

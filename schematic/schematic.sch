@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Christmas-Box"
+Date "2022-08-05"
+Rev "1"
+Comp "Bernhard Bablok"
+Comment1 "https://github.com/bablokb/christmas-box"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L User:PAM8302A_Breakout U2
+U 1 1 62EC0F09
+P 4800 5300
+F 0 "U2" H 5250 4600 50  0000 L CNN
+F 1 "PAM8302A_Breakout" H 4950 4450 50  0000 L CNN
+F 2 "" H 4800 5300 50  0001 C CNN
+F 3 "" H 4800 5300 50  0001 C CNN
+	1    4800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L User:TFT_1.8_128x160 T1
+U 1 1 62EC28BC
+P 6700 4250
+F 0 "T1" H 6850 4850 50  0000 L CNN
+F 1 "TFT_1.8_128x160" H 6550 4700 50  0000 L CNN
+F 2 "user:TFT_1.8_128x160" H 7450 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6700 4250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6650 4250
+NoConn ~ 6650 4350
+NoConn ~ 6650 4450
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 62ECD6AD
+P 4300 2700
+F 0 "#FLG01" H 4300 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4250 2900 50  0000 C CNN
+F 2 "" H 4300 2700 50  0001 C CNN
+F 3 "~" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L User:Pico U1
+U 1 1 62ECC314
+P 3350 4300
+F 0 "U1" H 3350 5515 50  0000 C CNN
+F 1 "Pico" H 3350 5424 50  0000 C CNN
+F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 3350 4300 50  0001 C CNN
+F 3 "" H 3350 4300 50  0001 C CNN
+	1    3350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 62ECECC2
+P 5450 3100
+F 0 "SW1" H 5450 3385 50  0000 C CNN
+F 1 "SW_Push" H 5450 3294 50  0000 C CNN
+F 2 "" H 5450 3300 50  0001 C CNN
+F 3 "~" H 5450 3300 50  0001 C CNN
+	1    5450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 62ED04B6
+P 4750 3100
+F 0 "BT1" V 4995 3100 50  0000 C CNN
+F 1 "Battery" V 4904 3100 50  0000 C CNN
+F 2 "" V 4750 3160 50  0001 C CNN
+F 3 "~" V 4750 3160 50  0001 C CNN
+	1    4750 3100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6650 4550
+Wire Wire Line
+	6650 4750 5050 4750
+Wire Wire Line
+	5050 4750 5050 4950
+Wire Wire Line
+	5050 4950 4050 4950
+Wire Wire Line
+	6650 4850 4050 4850
+Wire Wire Line
+	6650 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 4700
+Wire Wire Line
+	5300 4700 4950 4700
+Wire Wire Line
+	4950 4700 4950 4750
+Wire Wire Line
+	4950 4750 4050 4750
+Wire Wire Line
+	6650 5050 5350 5050
+Wire Wire Line
+	5350 5050 5350 4650
+Wire Wire Line
+	5350 4650 4050 4650
+Wire Wire Line
+	6650 4650 5400 4650
+Wire Wire Line
+	5400 4650 5400 4450
+Wire Wire Line
+	5400 4450 4050 4450
+Text Label 5100 2600 2    50   ~ 0
+GND
+Wire Wire Line
+	4950 3100 5100 3100
+Wire Wire Line
+	5100 3100 5250 3100
+Connection ~ 5100 3100
+Text Label 4250 3550 0    50   ~ 0
+GND
+Text Label 6400 4050 2    50   ~ 0
+GND
+Text Label 6450 5550 2    50   ~ 0
+GND
+Text Label 4600 5800 2    50   ~ 0
+GND
+Text Label 4250 3750 0    50   ~ 0
+Vcc
+Text Label 6400 4150 2    50   ~ 0
+Vcc
+Text Label 6450 5450 2    50   ~ 0
+Vcc
+Text Label 4600 5700 2    50   ~ 0
+Vcc
+Text Label 4600 5500 2    50   ~ 0
+GND
+NoConn ~ 4800 5600
+Wire Wire Line
+	4600 5500 4800 5500
+Wire Wire Line
+	4600 5700 4800 5700
+Wire Wire Line
+	4600 5800 4800 5800
+Wire Wire Line
+	6450 5550 6650 5550
+Wire Wire Line
+	6450 5450 6650 5450
+Wire Wire Line
+	6400 4150 6650 4150
+Wire Wire Line
+	6400 4050 6650 4050
+Wire Wire Line
+	4250 3550 4050 3550
+Wire Wire Line
+	4550 3100 4300 3100
+Wire Wire Line
+	4300 3100 4300 3450
+Wire Wire Line
+	4050 3450 4300 3450
+Wire Wire Line
+	4300 2700 4300 3100
+Connection ~ 4300 3100
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 62ECAA73
+P 5450 2600
+F 0 "#FLG02" H 5450 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 2773 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "~" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2600 5100 3100
+NoConn ~ 4050 3350
+NoConn ~ 4050 3850
+NoConn ~ 4050 3950
+NoConn ~ 4050 4050
+NoConn ~ 4050 4150
+NoConn ~ 4050 4250
+NoConn ~ 4050 4350
+NoConn ~ 4050 4550
+NoConn ~ 4050 5050
+NoConn ~ 4050 5250
+NoConn ~ 2650 3350
+NoConn ~ 2650 3450
+NoConn ~ 2650 3550
+NoConn ~ 2650 3650
+NoConn ~ 2650 3750
+NoConn ~ 2650 3850
+NoConn ~ 2650 3950
+NoConn ~ 2650 4050
+NoConn ~ 2650 4150
+NoConn ~ 2650 4250
+NoConn ~ 2650 4350
+NoConn ~ 2650 4450
+NoConn ~ 2650 4550
+NoConn ~ 2650 4650
+NoConn ~ 2650 4750
+NoConn ~ 2650 4850
+NoConn ~ 2650 4950
+NoConn ~ 2650 5050
+NoConn ~ 2650 5150
+NoConn ~ 2650 5250
+NoConn ~ 3250 5450
+NoConn ~ 3350 5450
+NoConn ~ 3450 5450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 62EDCE26
+P 4450 3750
+F 0 "#FLG0101" H 4450 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 3923 50  0000 C CNN
+F 2 "" H 4450 3750 50  0001 C CNN
+F 3 "~" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3750 4450 3750
+Wire Wire Line
+	5800 2600 5800 3100
+Wire Wire Line
+	4050 3650 5800 3650
+Wire Wire Line
+	5650 3100 5800 3100
+Connection ~ 5800 3100
+Wire Wire Line
+	5800 3100 5800 3650
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2600 5800 2600
+Wire Wire Line
+	5100 2600 5450 2600
+Wire Wire Line
+	4800 5150 4800 5400
+Wire Wire Line
+	4050 5150 4800 5150
+$EndSCHEMATC

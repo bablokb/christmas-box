@@ -25,7 +25,7 @@ x_del = 18.3;
 y_del = 18.3;
 x_bot =  x_top - 2*x_del;
 y_bot =  y_top - 2*y_del;
-h_top =  100;
+z_top =  100;
 z_b   =  0.6;            // vase-mode 3 layers
 z_lid =  16.5 + z_b;       // inner-hight + base
 

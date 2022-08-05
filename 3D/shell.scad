@@ -19,7 +19,7 @@ difference() {
   prismoid(size1=[x_bot,y_bot], 
            size2=[x_top,y_top],
            rounding=10,
-           h=h_top);
+           h=z_top);
 // remove comments if you don't print in vase-mode
 //  translate([0,0,b]) prismoid(size1=[x_bot-2*w4,y_bot-2*w4], 
 //           size2=[x_top-2*w4,y_top-2*w4],

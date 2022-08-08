@@ -36,3 +36,15 @@ y_bat = 27.0;
 z_bat = 19.0;
 c_bat = 4.0;     // cutout
 
+// frame
+
+x_frame = 100;
+y_frame = 60;
+b_frame = 0.6;                           // frame-base
+
+// cutout connector
+
+x_conn     = 18;
+y_conn     =  5;
+x_conn_off = -x_frame/2+55.5;
+y_conn_off = y_top/2-w06-w2-y_conn;

@@ -14,10 +14,14 @@ $fa = 1;
 $fs = 0.5;
 //$fn = 96;
 
+// printer dimensions (walls)
+
 fuzz = 0.01;
 w06 = 0.6;               // vase-mode with wall-thickness 0.6mm
 w2  = 0.86;              // 2 walls Prusa MK3S with 0.2mm layer-hight
 w4  = 1.67;              // 4 walls Prusa MK3S with 0.2mm layer-hight
+
+// outer shell
 
 x_top = 140;
 y_top = 120;
@@ -28,6 +32,12 @@ y_bot =  y_top - 2*y_del;
 z_top =  100;
 z_b   =  0.6;            // vase-mode 3 layers
 z_lid =  16.5 + z_b;       // inner-hight + base
+
+// inner shell
+
+x_is = x_bot-w06 + (x_top-x_bot)*(z_bat+z_b)/z_top;  // linear interpolation
+y_is = y_bot-w06 + (y_top-y_bot)*(z_bat+z_b)/z_top;  // of dimensions
+
 
 // battery dimensions
 

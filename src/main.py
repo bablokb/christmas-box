@@ -79,7 +79,10 @@ def upd_image(img):
 audio   = audiopwmio.PWMAudioOut(PIN_PWM)
 decoder = audiomp3.MP3Decoder(open("./media/"+SND_FILES[0], "rb"))
 
-upd_image(IMG_FILES[-1])
+img_len = len(IMG_FILES)
+img_ind = 0
+upd_image(IMG_FILES[img_ind])
+end_time = time.monotonic() + 5
 
 while True:
   for snd in SND_FILES:
@@ -89,9 +92,12 @@ while True:
 
     # show images while playing
     while audio.playing:
-      for img in IMG_FILES:
-        time.sleep(5)
-        upd_image(img)
+      while time.monotonic() < end_time and audio.playing:
+        time.sleep(0.1)
+      if audio.playing:
+        img_ind = (img_ind+1) % img_len
+        upd_image(IMG_FILES[img_ind])
+        end_time = time.monotonic() + 5
 
     # close sound-file
     decoder.file.close()

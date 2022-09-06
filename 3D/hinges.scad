@@ -209,7 +209,7 @@ component_color              = "Silver";
 hinge_width                           = 2*(z_lid-z_b-1);
 leaf_height                           = x_hinges;
 // Leaf and knuckle thickness. Values greater than 3mm recommended.
-leaf_gauge                            = b_plate;
+leaf_gauge                            = g_leaf;
 // Recomended values between 0.3 and 4.0. Better quality below 3.0, tough to loosen.
 component_clearance                   = 0.4;
 // Knuckle count must be an odd number, so that the pin is supported on both ends.

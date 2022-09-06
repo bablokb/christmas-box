@@ -36,7 +36,8 @@ z_lid =  16.5 + z_b;       // inner-hight + base
 
 // inner plate
 
-b_plate = 2.0;           // set leafe_gauge of hinges to this value as well
+b_plate = 4.5;
+g_leaf  = b_plate - 2.5; // set leaf_gauge of hinges to this value
 
 // hinges
 

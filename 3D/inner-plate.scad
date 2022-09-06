@@ -16,7 +16,7 @@ h_walls = 10;
 
 x_btn     =  6.1;
 y_btn     = 13.1;
-z_btn     =  6.0;
+z_btn     =  4.5;
 x_btn_off = x_top/2 - x_btn/2 - (x_top/2-x_is/2)/2;
 y_btn_off = -y_btn/2;
 

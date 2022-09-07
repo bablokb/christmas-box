@@ -16,15 +16,9 @@ h_walls = 10;
 
 x_btn     =  6.1;
 y_btn     = 13.1;
-z_btn     =  4.5;
+z_btn     =  1.2;
 x_btn_off = x_top/2 - x_btn/2 - (x_top/2-x_is/2)/2;
 y_btn_off = -y_btn/2;
-
-x_hinge      = 30;
-y_hinge      = b_plate;
-x_hinge1_off = -x_top/2 + 10;
-x_hinge2_off = x_top/2 - x_hinge - 10;
-y_hinge_off  = y_top/2 - b_plate;
 
 include <BOSL2/std.scad>
 
@@ -42,10 +36,10 @@ module rim() {
          p1=[-x_conn_off-x_conn,y_conn_off,0]);
     cuboid([x_btn,y_btn,b_plate+fuzz],                // cutout for button
          p1=[x_btn_off,y_btn_off,0]);
+    cuboid([x_hinges+gap,y_hinges+gap,b_plate+fuzz],            // cutout for hinge
+         p1=[-x_top/2+x_hinges_off-gap/2,y_hinges_off-gap,0]);
     cuboid([x_hinges+gap,b_plate+gap,b_plate+fuzz],            // cutout for hinge
-         p1=[-x_top/2+x_hinges_off-gap/2,y_top/2-b_plate-gap,0]);
-    cuboid([x_hinges+gap,b_plate+gap,b_plate+fuzz],            // cutout for hinge
-         p1=[x_top/2-x_hinges_off-x_hinges-gap/2,y_top/2-b_plate-gap,0]);
+         p1=[x_top/2-x_hinges_off-x_hinges-gap/2,y_hinges_off-gap,0]);
   }
 }
 

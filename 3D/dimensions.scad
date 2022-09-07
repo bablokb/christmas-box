@@ -42,8 +42,9 @@ g_leaf  = b_plate - 2.5; // set leaf_gauge of hinges to this value
 // hinges
 
 x_hinges     = 30;
-y_hinges     =  3;
+y_hinges     =  2;
 x_hinges_off = 12;
+y_hinges_off = y_top/2 - y_hinges;
 
 // battery dimensions
 
